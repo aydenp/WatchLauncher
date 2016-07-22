@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchLauncher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWm-Mj-10m">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have an Apple Watch, try this app on it" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-lz-ayp">
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvY-Vm-diq">
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Crash SpringBoard"/>
+                                        <connections>
+                                            <action selector="crashPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRN-OQ-4Sf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gsC-lz-ayp" secondAttribute="bottom" id="6Q3-sc-dhL"/>
+                                    <constraint firstItem="GvY-Vm-diq" firstAttribute="top" secondItem="IWm-Mj-10m" secondAttribute="top" id="CG1-oA-ee3"/>
+                                    <constraint firstAttribute="trailing" secondItem="gsC-lz-ayp" secondAttribute="trailing" id="QxF-dd-WMh"/>
+                                    <constraint firstItem="gsC-lz-ayp" firstAttribute="leading" secondItem="IWm-Mj-10m" secondAttribute="leading" id="c2h-35-lEQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="GvY-Vm-diq" secondAttribute="trailing" id="olQ-nB-D58"/>
+                                    <constraint firstItem="gsC-lz-ayp" firstAttribute="top" secondItem="GvY-Vm-diq" secondAttribute="bottom" constant="8" id="ooh-tK-8oD"/>
+                                    <constraint firstItem="GvY-Vm-diq" firstAttribute="leading" secondItem="IWm-Mj-10m" secondAttribute="leading" id="wXJ-qX-5Wq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IWm-Mj-10m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="M7D-Tp-YZm"/>
+                            <constraint firstItem="IWm-Mj-10m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O8w-3N-8Ri"/>
+                            <constraint firstItem="IWm-Mj-10m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TAd-36-wRI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IWm-Mj-10m" secondAttribute="trailing" constant="20" id="n8o-2J-aXA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="awLabel" destination="gsC-lz-ayp" id="Wgy-D6-Phq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.98594677450000001" green="0.0" blue="0.039444983009999997" alpha="1" colorSpace="calibratedRGB"/>
+</document>
